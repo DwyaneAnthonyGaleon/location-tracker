@@ -23,12 +23,23 @@ public class Users {
                 scan.nextLine();
 
                 switch (option) {
-                    case 1: addUser(); break;
-                    case 2: viewUsers(); break;
-                    case 3: editUser(); break;
-                    case 4: deleteUser(); break;
-                    case 5: System.out.println("Returning to main menu."); break;
-                    default: System.out.println("Invalid option.");
+                    case 1: 
+                        addUser(); 
+                        break;
+                    case 2: 
+                        viewUsers(); 
+                        break;
+                    case 3: 
+                        editUser(); 
+                        break;
+                    case 4: 
+                        deleteUser(); 
+                        break;
+                    case 5: 
+                        System.out.println("Returning to main menu."); 
+                        break;
+                    default: 
+                        System.out.println("Invalid option.");
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a valid number.");

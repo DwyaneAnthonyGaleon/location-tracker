@@ -23,12 +23,23 @@ public class Places {
                 scan.nextLine();
 
                 switch (option) {
-                    case 1: addPlace(); break;
-                    case 2: viewPlaces(); break;
-                    case 3: editPlace(); break;
-                    case 4: deletePlace(); break;
-                    case 5: System.out.println("Returning to main menu."); break;
-                    default: System.out.println("Invalid option.");
+                    case 1: 
+                        addPlace(); 
+                        break;
+                    case 2: 
+                        viewPlaces(); 
+                        break;
+                    case 3: 
+                        editPlace(); 
+                        break;
+                    case 4: 
+                        deletePlace(); 
+                        break;
+                    case 5: 
+                        System.out.println("Returning to main menu."); 
+                        break;
+                    default: 
+                        System.out.println("Invalid option.");
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a valid number.");

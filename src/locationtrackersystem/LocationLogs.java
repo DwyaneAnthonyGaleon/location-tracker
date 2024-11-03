@@ -1,3 +1,4 @@
+
 package locationtrackersystem;
 
 import java.util.InputMismatchException;
@@ -23,12 +24,23 @@ public class LocationLogs {
                 scan.nextLine();
 
                 switch (option) {
-                    case 1: addLocationLog(); break;
-                    case 2: viewLocationLogs(); break;
-                    case 3: editLocationLog(); break;
-                    case 4: deleteLocationLog(); break;
-                    case 5: System.out.println("Returning to main menu."); break;
-                    default: System.out.println("Invalid option.");
+                    case 1: 
+                        addLocationLog(); 
+                        break;
+                    case 2: 
+                        viewLocationLogs(); 
+                        break;
+                    case 3: 
+                        editLocationLog(); 
+                        break;
+                    case 4: 
+                        deleteLocationLog(); 
+                        break;
+                    case 5: 
+                        System.out.println("Returning to main menu."); 
+                        break;
+                    default: 
+                        System.out.println("Invalid option.");
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input. Please enter a valid number.");
